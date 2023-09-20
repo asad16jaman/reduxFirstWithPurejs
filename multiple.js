@@ -1,4 +1,7 @@
-const {createStore, combineReducers} = require("redux")
+const {createStore, combineReducers,applyMiddleware} = require("redux")
+const {default:logger} = require("redux-logger")
+
+
 //initial state...
 let product = {
     productName: ["sart","pant"],
@@ -57,7 +60,7 @@ let alstate = combineReducers({
     cardReducer
 })
 
-let store = createStore(alstate)
+let store = createStore(alstate,applyMiddleware(logger))
 
 
 
