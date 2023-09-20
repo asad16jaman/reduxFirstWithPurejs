@@ -79,6 +79,6 @@ stor.subscribe(()=>{
 stor.dispatch(increamentAction())
 stor.dispatch(incrementByUser(5))
 stor.dispatch(decrementByUser(2))
-stor.dispatch(resetState())
+// stor.dispatch()
 
 
